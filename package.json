@@ -21,6 +21,9 @@
     "sequelize": "^6.19.0",
     "slugify": "^1.6.5"
   },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  },
   "bugs": {
     "url": "https://github.com/JoaoDallagnol/blog/issues"
   },
