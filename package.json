@@ -1,0 +1,28 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "projeto blog com Node.js, express, sequelize mysql e outras ferramentas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoaoDallagnol/blog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-session": "^1.17.3",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.19.0",
+    "slugify": "^1.6.5"
+  },
+  "bugs": {
+    "url": "https://github.com/JoaoDallagnol/blog/issues"
+  },
+  "homepage": "https://github.com/JoaoDallagnol/blog#readme"
+}
