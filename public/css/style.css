@@ -4,7 +4,7 @@ body {
 }
 
 .botao-background-main {
-    background-color:   black;
+    background-color:   rgba(3, 3, 3, 0.842);
     list-style: none;
     border: 2px solid #DE6600;
     padding: 0.375rem 0.75rem;
@@ -28,30 +28,35 @@ body {
 .botao-background-main:hover{
 
     background-color:  #DE6600;
-    border-color: black;
-    color: black;
+    border-color: rgba(3, 3, 3, 0.842);
+    color: rgba(3, 3, 3, 0.842);
     text-decoration: none;
 }
 
 .card {
     background-color: #f18525;
-    border: 7px solid black
+    border: 7px solid rgba(3, 3, 3, 0.842)
 }
 
 .jumbotron{
     background-color: #f18525;
-    border: 7px solid black
+    border: 7px solid rgba(3, 3, 3, 0.842)
 }
 
 .btn-jumbotron {
-    background-color:   black;
+    background-color:   rgba(3, 3, 3, 0.842);
     list-style: none;
     border: 2px solid #DE6600;
     color: #DE6600;
 }
 .btn-jumbotron:hover {
-    background-color: #f18525;
-    border-color: black;
-    color: black;
+    background-color: #DE6600;
+    border-color: rgba(3, 3, 3, 0.842);
+    color: rgba(3, 3, 3, 0.842);
     text-decoration: none;
+}
+
+.table-main {
+    color: black;
+    background-color: #DE6600;
 }

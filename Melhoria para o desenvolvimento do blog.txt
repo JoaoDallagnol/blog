@@ -1,17 +1,3 @@
-Tarefas a fazer para melhorar o sistema do blog
-	- Menu melhorado
-	- Botão para criar artigo
-	- Botão para editar artigos
-	- CSS melhorado
-		- ter uma imagem SVG no background
-	- Sistema de Login melhorado
-		- deletar uma conta
-		- editar uma conta
-	- Botão para logar(criar conta) e deslogar
-
-
-
-
 TUTORIAL DATABASE
 	- Instalar o mysql e o mysql workbench
 	- Create a new schema in the connected server (mesmo nome do arquivo "connection.js")
