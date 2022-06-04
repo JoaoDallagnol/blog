@@ -2,13 +2,20 @@ const express = require("express")
 const app = express()
 const bodyParser = require("body-parser")
 const connection = require("./database/connection")
+const session = require("express-session")
+
+const categoriesController = require("./categories/CategoriesController")
+const articleController =  require("./articles/ArticleController")
+const usersController = require("./users/UsersController")
+
+const Article = require("./articles/Article")
+const Category = require("./categories/Category")
+const User = require("./users/User")
 
 
-app.listen("8484", () => {
-    console.log("O servidor está rodando!")
-})
 
 app.set('view engine', 'ejs')
+app.use(express.static('public'))
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
 
@@ -19,6 +26,14 @@ connection
     }).catch((error) => {
         console.log(error)
     })
+
+app.use(session({
+    secret: "qualquercoisa", cookie: {maxAge: 3000000000}
+}))
+
+app.use("/", categoriesController)
+app.use("/", articleController)
+app.use("/", usersController)
 
 app.get("/", (req, res) => {
     Article.findAll({
@@ -71,4 +86,8 @@ app.get("/category/:slug", (req, res) => {
     }).catch(error => {
         res.redirect("/")
     })
+})
+
+app.listen("8181", () => {
+    console.log("O servidor está rodando!")
 })
