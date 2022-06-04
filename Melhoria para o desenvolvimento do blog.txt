@@ -15,3 +15,12 @@ Tarefas a fazer para melhorar o sistema do blog
 TUTORIAL DATABASE
 	- Instalar o mysql e o mysql workbench
 	- Create a new schema in the connected server (mesmo nome do arquivo "connection.js")
+	- Ir nos arquivos "Article, Category e User
+		- descomentar a linha do sync em seus respectivos arquivos
+		- rodar o servidor uma vez
+		- derrubar
+		- comentar ou excluir a linha do sync
+		- salvar o arquivo
+		- e subir o servidor novamente
+	
+	- Pronto, crie seu proprio blog com seus artigos e categorias

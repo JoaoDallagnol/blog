@@ -88,6 +88,6 @@ app.get("/category/:slug", (req, res) => {
     })
 })
 
-app.listen("8181", () => {
+app.listen("8484", () => {
     console.log("O servidor está rodando!")
 })
